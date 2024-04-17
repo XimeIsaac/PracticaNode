@@ -1,6 +1,6 @@
 on: push
 jobs:
-  build-node:
+  py-node:
     runs-on: ubuntu-latest
     container: python:3.8
     steps:
