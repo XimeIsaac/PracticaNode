@@ -8,3 +8,9 @@ jobs:
       - run: npm --version
       - uses: actions/checkout@v4
       - run: node app.js
+    container: python:3.8
+    steps:
+      - uses: actions/checkout@v4
+      - run: pyhton3 --version
+      - run: python3 archivo.py
+
