@@ -10,4 +10,4 @@ jobs:
       - name: Version de node
         run: node --version
       - name: Expediente
-        run: echo "Expediente: 739032"
+        run: echo "Expediente 739032"
