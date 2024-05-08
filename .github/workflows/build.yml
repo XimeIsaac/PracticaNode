@@ -1,13 +1,15 @@
 on: push
 jobs:
-  py-app:
+  py-node:
     runs-on: ubuntu-latest
-    container: python:3.8
+    container: node:16
     steps:
-      - uses: actions/checkout@v4
-      - name: Nombre
+      - run: node --version
+      - run: npm --version
+      - uses: actions/checkout@v3
+      - name: nombre
         run: echo "Ximena Isaac Horta"
-      - name: Version de node
+      - name: Version Node
         run: node --version
       - name: Expediente
-        run: echo "Expediente 739032"
+        run: echo "739032"
